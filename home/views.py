@@ -27,3 +27,16 @@ def contact(request):
         contact.save()
         messages.success(request, 'Contact saved successfully')
     return render(request, 'contact.html')
+
+
+def login(request):
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        pwd = request.POST.get('password')
+
+
+
+def logout(request):
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        pwd = request.POST.get('password')
